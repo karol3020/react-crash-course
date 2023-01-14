@@ -8,9 +8,11 @@ import Counter from './components/Counter.jsx'
 function App() {
   const [showModal, setShowModal] = useState(false)
   
+
+  return <Counter/>
+  
   return (
-    <div>
-      <Counter />
+      <div>
       <Title />
       <div>
         <input type="text" onChange={(event) => {
