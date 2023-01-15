@@ -1,14 +1,12 @@
 import './Todo.css'
 
-function Todo({title}) {
-    function deleteTodo(id) {
-        console.log('deleteTodo()', title.toUpperCase())
-    }
-
+//Third step accept 
+function Todo({title, onTodoDelete}) {
     return (
     <div className='todo'>
         <p>{title}</p>
-        <button onClick={() => deleteTodo(1)}>Delete</button>
+        //Last step activate 
+        <button onClick={onTodoDelete}>Delete</button>
     </div>
     )
 }
